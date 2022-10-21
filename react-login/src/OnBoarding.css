@@ -1,0 +1,25 @@
+.OnBoarding {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 9em;
+}
+
+.startButton {
+    background-color: rgb(10, 76, 161);
+    font-size: 36px;
+    color:rgb(255, 255, 255);
+    border-radius: 32px;
+    position: absolute;
+    width: 473px;
+    height: 83px;
+    left: 181px;
+    top: 928px;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(10, 76, 161);
+    margin-bottom: 0.6em;
+}
