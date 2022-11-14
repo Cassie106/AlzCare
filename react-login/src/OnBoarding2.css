@@ -3,7 +3,7 @@
     text-align: center;
     margin-bottom: 2em;
     margin-top: 9em;
-  }
+}
 
 .button1 {
     background-color: rgb(10, 76, 161);
@@ -14,7 +14,7 @@
     width: 473px;
     height: 83px;
     left: 181px;
-    top: 680px;
+    top: 720px;
 }
 
 .button2 {
@@ -27,5 +27,5 @@
     width: 473px;
     height: 83px;
     left: 181px;
-    top: 860px;
+    top: 850px;
 }

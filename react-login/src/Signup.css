@@ -1,20 +1,14 @@
-h1 {
-    text-align: center;
-    margin-bottom: 1em;
-    color: rgb(34, 34, 34);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    width: 675px;
-    height: 60px;
-    left: 80px;
-    top: 162px;
+
+.Signup-form-container {
+    width: 240px;
+    height: 68px;
+    left: 159px;
+    top: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Auth-form-container {
-    width: 600px;
-}
 
 .button-signup {
     background-color: rgb(10, 76, 161);
@@ -26,4 +20,12 @@ h1 {
     height: 83px;
     left: 181px;
     top: 680px;
+} 
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
 }

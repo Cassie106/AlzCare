@@ -1,11 +1,11 @@
-.OnBoarding {
+.Role {
     background-color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 2em;
     margin-top: 9em;
 }
 
-.startButton {
+.button1 {
     background-color: rgb(10, 76, 161);
     font-size: 36px;
     color:rgb(255, 255, 255);
@@ -14,14 +14,18 @@
     width: 473px;
     height: 83px;
     left: 181px;
-    top: 900px;
+    top: 720px;
 }
 
-h1{
-    font-size: 80px;
-    /* text-align: center; */
-    margin-left: 1.5em;
-    font-weight: 800;
+.button2 {
+    background-color: rgb(255, 255, 255);
+    font-size: 36px;
     color: rgb(10, 76, 161);
-    margin-bottom: 0.6em;
+    border-radius: 32px;
+    border-width: 3px;
+    position: absolute;
+    width: 473px;
+    height: 83px;
+    left: 181px;
+    top: 850px;
 }

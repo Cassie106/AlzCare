@@ -1,4 +1,4 @@
-import imgLogo from './1.jpeg';
+import imgLogo from './1.png';
 import './OnBoarding.css';
 
 function OnBoarding() {

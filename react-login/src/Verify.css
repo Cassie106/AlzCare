@@ -1,11 +1,11 @@
-.OnBoarding {
+.Verify{
     background-color: rgb(255, 255, 255);
     text-align: center;
     margin-bottom: 2em;
     margin-top: 9em;
 }
 
-.startButton {
+.Button {
     background-color: rgb(10, 76, 161);
     font-size: 36px;
     color:rgb(255, 255, 255);
@@ -18,7 +18,7 @@
 }
 
 h1{
-    font-size: 80px;
+    font-size: 40px;
     /* text-align: center; */
     margin-left: 1.5em;
     font-weight: 800;
