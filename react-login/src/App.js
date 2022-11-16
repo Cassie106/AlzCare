@@ -9,6 +9,7 @@ import Signup from './Signup';
 import Role from './role';
 import PhoneSignUp from './phoneSignUp';
 import Verify from './Verify';
+import Pet from './pet';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/role" element={<Role />} />
         <Route path="/phoneSignUp" element={<PhoneSignUp />} />
         <Route path="/verify" element={<Verify />} />
+        <Route path="/pet" element={<Pet />} />
       </Routes>
     </BrowserRouter>
   );
