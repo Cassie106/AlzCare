@@ -1,0 +1,7 @@
+.createSession__container {
+    flex-direction: row;
+    padding: 50px;
+    position: relative;
+    top: 390px; 
+    left: 200px
+}

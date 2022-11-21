@@ -12,6 +12,8 @@ import Verify from './Verify';
 import Pet from './pet';
 import Activities from './Activities';
 import Category from './category';
+import NewSession from './NewSession';
+import Session from './Session';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/pet" element={<Pet />} />
         <Route path="/Activities" element={<Activities />} />
         <Route path="/Category" element={<Category />} />
+        <Route path="/newSession" element={<NewSession />} />
+        <Route path="/session" element={<Session />} />
       </Routes>
     </BrowserRouter>
   );
