@@ -6,29 +6,99 @@ import {
   AppstoreOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
+import { useState } from 'react';
+import drawing from './drawing.png';
+import math from './math.png';
+import boat from './boat.png';
+import drum from './drum.png';
+import { Card } from 'antd';
+
+const { Meta } = Card;
 
 const Activities = () => {
   const gotoSession = () => {
     window.location.href = './newSession';
   };
-  return (
-    <div>
-      <div>
-        <Menu
-          mode="horizontal"
-          defaultSelectedKeys={['Rec']}
-          onClick={gotoSession}
-        >
-          <Menu.Item key="Rec" icon={<MailOutlined />}>
-            Recommended
-          </Menu.Item>
 
-          <Menu.Item key="Ses" icon={<MailOutlined />}>
-            My Session
-          </Menu.Item>
-        </Menu>
+  let [SesMode, setSesMode] = useState('Rec');
+
+  const changeSesMode = () => {
+    setSesMode(SesMode === 'Rec' ? 'Rec' : 'Ses');
+  };
+
+  const gotoDrawing = () => {
+    window.location.href =
+      'https://cassie106.github.io/GIXMirror/activity/masterpiece/';
+  };
+
+  if (SesMode === 'Rec') {
+    return (
+      <div className="recSession">
+        <div className="cards">
+          <div className="Art">
+            <p> Art</p>
+            <Card
+              hoverable
+              style={{
+                width: 240,
+              }}
+              cover={<img alt="example" src={drawing} />}
+              onClick={() => gotoDrawing()}
+              // extra={
+              //   <a href="https://cassie106.github.io/GIXMirror/activity/masterpiece/">
+              //     Start
+              //   </a>
+              // }
+            >
+              <Meta title="Trace It" description="This is a drawing game." />
+            </Card>
+          </div>
+
+          <div className="Puzzle">
+            <p>Puzzle</p>
+            <Card
+              hoverable
+              style={{
+                width: 240,
+              }}
+              cover={<img alt="example" src={math} />}
+            >
+              <Meta title="Math" description="Interactive with numbers." />
+            </Card>
+          </div>
+
+          <div className="Sport">
+            <p>Sports</p>
+            <Card
+              hoverable
+              style={{
+                width: 240,
+              }}
+              cover={<img alt="example" src={boat} />}
+            >
+              <Meta title="Boating" description="This is a rowing game." />
+            </Card>
+          </div>
+
+          <div className="Music">
+            <p>Music</p>
+            <Card
+              hoverable
+              style={{
+                width: 240,
+              }}
+              cover={<img alt="example" src={drum} />}
+            >
+              <Meta title="Beat It" description="This is a druming game." />
+            </Card>
+          </div>
+        </div>
       </div>
+    );
+  }
 
+  if (SesMode === 'Ses') {
+    return (
       <div className="mySession">
         <div className="title">
           <h2>No sessions yet </h2>
@@ -40,8 +110,26 @@ const Activities = () => {
           New Sessions{' '}
         </button>
       </div>
+    );
+  }
 
-      <div className="recSession"></div>
+  return (
+    <div>
+      <div>
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={['Rec']}
+          onClick={changeSesMode}
+        >
+          <Menu.Item key="Rec" icon={<MailOutlined />}>
+            Recommended
+          </Menu.Item>
+
+          <Menu.Item key="Ses" icon={<MailOutlined />}>
+            My Session
+          </Menu.Item>
+        </Menu>
+      </div>
     </div>
   );
 };

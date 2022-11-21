@@ -9,7 +9,10 @@ function Signup() {
   return (
     <div className="signup">
       <div className="signUpEmail">
-        <h1 className="title">Enter your name and email</h1>
+        <div className="title-signup">
+          <p>Enter your name and email</p>
+        </div>
+
         <div className="nameForm">
           <div className="FirstName">
             <label> First Name</label>

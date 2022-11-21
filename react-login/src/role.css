@@ -86,3 +86,26 @@
     opacity: 1;
     pointer-events: all;
 }
+
+/* .title{
+    position: absolute;
+    width: 321px;
+    height: 43px;
+    left: 220px;
+    top: 234px;
+    
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 48px;
+    line-height: 43px;
+    color: #364663;
+} */
+
+.img-3{
+    position: absolute;
+    width: 420px;
+    height: 286px;
+    left: 224px;
+    top: 286px;
+}

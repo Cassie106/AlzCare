@@ -25,3 +25,23 @@ h1{
     color: rgb(10, 76, 161);
     margin-bottom: 0.6em;
 }
+
+.img-1{
+    width: 613px;
+    height: 76px;
+    left: 200px;
+    top: 234px;
+    
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+}
+
+.img-2{
+    position: absolute;
+    width: 400px;
+    height: 421px;
+    left: 189px;
+    top: 200px;
+}

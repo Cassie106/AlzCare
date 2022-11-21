@@ -50,8 +50,11 @@ function Role() {
 
   return (
     <div className="Role">
-      <h1>Are you a caregiver? </h1>
-      <img src={img3} alt="2" />
+      <div className="title">
+        <p>Are you a caregiver?</p>
+      </div>
+
+      <img src={img3} className="img-3" alt="2" />
       <button className="button1" onClick={Yes}>
         {' '}
         Yes{' '}

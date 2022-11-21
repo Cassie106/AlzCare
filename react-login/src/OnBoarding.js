@@ -1,5 +1,5 @@
 import imgLogo from './1.png';
-import OFun from './OFUN.png';
+import OFun from './OFUN-2.png';
 import './OnBoarding.css';
 
 function OnBoarding() {

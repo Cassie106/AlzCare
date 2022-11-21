@@ -24,8 +24,10 @@ export default function (props) {
     return (
       <div classname="phoneSignUp">
         <div className="phone-form">
+          <div className="title-num">
+            <p>Enter your phone number</p>
+          </div>
           <ConfigProvider locale={en}>
-            <h1 className="title">Enter your phone number</h1>
             <label> Country Code</label>
             <label> Phone Number</label>
             <CountryPhoneInput inline defaultValue={{ SHORT: 'US' }} />

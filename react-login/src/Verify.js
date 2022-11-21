@@ -6,6 +6,7 @@ const CORRECT_PIN_CODE = '151022';
 
 function Verify() {
   const signup = () => {
+    alert('Success!');
     window.location.href = './Signup';
   };
 
@@ -16,9 +17,9 @@ function Verify() {
   return (
     <div className="Verify">
       <div className="code-box">
-        <h1 className="title">
-          Enter the 6-digit verification code we send you
-        </h1>
+        <div className="title-dig">
+          <p>Enter the 6-digit verification code we send you</p>
+        </div>
         <br></br>
         <ReactCodeInput type="number" fields={6} />
       </div>

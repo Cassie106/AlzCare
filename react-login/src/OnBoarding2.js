@@ -12,8 +12,11 @@ function OnBoarding2() {
 
   return (
     <div className="OnBoarding2">
-      <h1>Welcome</h1>
-      <img src={img2} alt="2" />
+      <div className="title">
+        <p>Welcome!</p>
+      </div>
+
+      <img src={img2} className="img-2" alt="2" />
       <button className="button1" onClick={signIn}>
         {' '}
         Log In{' '}

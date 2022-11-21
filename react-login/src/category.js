@@ -7,7 +7,7 @@ function Category() {
   return (
     <div className="Category">
       <div className="title">
-        <p>Choose Christina's top 3 area of interest? </p>
+        <p>Choose Christina's top area of interest? </p>
       </div>
       <div className="interest">
         <div class="btn-group" role="group" aria-label="Basic example">

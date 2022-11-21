@@ -15,6 +15,10 @@ import Category from './category';
 import NewSession from './NewSession';
 import Session from './Session';
 
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import DragDrop from './DragDrop';
+
 function App() {
   return (
     <BrowserRouter>

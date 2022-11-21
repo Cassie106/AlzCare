@@ -10,18 +10,18 @@
     top: 234px;
 }
 
-.title {
-    width: 401px;
-    height: 43px;
-    /* left: 217px;
-    top: 234px; */
+.title-num {
+
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: 590;
-    font-size: 28px;
+    font-size: 36px;
     line-height: 43px;
     /* identical to box height */
+    
     text-align: center;
+    
+    color: #364663;
 }
 
 .text-msg{

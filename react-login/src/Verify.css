@@ -33,7 +33,7 @@
     border-radius: 50px;
 }
 
-.title {
+.title-dig {
     width: 401px;
     height: 43px;
     left: 217px;
@@ -41,7 +41,6 @@
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: 590;
-    font-size: 28px;
-    line-height: 43px;
+    font-size: 18px;
     text-align: center;
 }

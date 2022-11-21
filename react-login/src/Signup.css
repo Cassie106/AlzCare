@@ -40,17 +40,13 @@
     line-height: 24px;
 }   
 
-.title {
-    width: 401px;
-    height: 43px;
-    /* left: 217px;
-    top: 234px; */
+.title-signup {
+    top: 234px;
     font-family: 'SF Pro';
     font-style: normal;
     font-weight: 590;
     font-size: 28px;
     line-height: 43px;
-    /* identical to box height */
     text-align: center;
 }
 
