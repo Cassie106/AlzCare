@@ -23,24 +23,28 @@ export default function (props) {
   if (authMode === 'signup') {
     return (
       <div classname="phoneSignUp">
-        <ConfigProvider locale={en}>
-          <h1>Enter your phone number</h1>
-          <h4> Country Code</h4>
-          <h4> Phone Number</h4>
-          <CountryPhoneInput inline defaultValue={{ SHORT: 'US' }} />
-          <h4>
-            We'll send you a code to verify your phone number. Standard rates
-            apply.
-          </h4>
-          <h4> Already have account? </h4>
+        <div className="phone-form">
+          <ConfigProvider locale={en}>
+            <h1 className="title">Enter your phone number</h1>
+            <label> Country Code</label>
+            <label> Phone Number</label>
+            <CountryPhoneInput inline defaultValue={{ SHORT: 'US' }} />
+            <div className="text-msg">
+              We'll send you a code to verify your phone number. Standard rates
+              apply.{' '}
+            </div>
+          </ConfigProvider>
+        </div>
+        <button className="button-enter" onClick={verify}>
+          {' '}
+          Enter{' '}
+        </button>
+        <div className="text-bot">
+          Already have account?
           <span className="link-primary" onClick={changeAuthMode}>
             Sign In
           </span>
-          <button className="button" onClick={verify}>
-            {' '}
-            Enter{' '}
-          </button>
-        </ConfigProvider>
+        </div>
       </div>
     );
   }

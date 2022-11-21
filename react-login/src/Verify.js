@@ -9,15 +9,28 @@ function Verify() {
     window.location.href = './Signup';
   };
 
+  const phoneSignUp = () => {
+    window.location.href = './phoneSignUp';
+  };
+
   return (
     <div className="Verify">
-      <h1>Enter the 6-digit verification code</h1>
-      <ReactCodeInput type="number" fields={6} />
-      <button className="Button" onClick={signup}>
+      <div className="code-box">
+        <h1 className="title">
+          Enter the 6-digit verification code we send you
+        </h1>
+        <br></br>
+        <ReactCodeInput type="number" fields={6} />
+      </div>
+      <button className="button-enter" onClick={signup}>
         {' '}
         Enter{' '}
       </button>
-      <h4>Didn't receive a code?</h4>
+      <div className="text-bot">
+        <span className="link-primary" onClick={phoneSignUp}>
+          Didn't receive a code?
+        </span>
+      </div>
     </div>
   );
 }

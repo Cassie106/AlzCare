@@ -1,31 +1,119 @@
-
-.Signup-form-container {
-    width: 240px;
-    height: 68px;
-    left: 159px;
-    top: 600px;
-    display: flex;
+.signUpEmail {
+    width: 420px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
     justify-content: center;
-    align-items: center;
+    background-color: white;
+    position: absolute;
+    left: 217px;
+    top: 234px;
 }
 
+.FirstName{
+    display:inline-block;
+    flex-direction: row;
+    align-items: center;    
+}
+.LastName{
+    display:inline-block;
+    flex-direction: row;
+    align-items: center;    
+}
 
-.button-signup {
-    background-color: rgb(10, 76, 161);
-    font-size: 36px;
-    color:rgb(255, 255, 255);
-    border-radius: 32px;
-    position: absolute;
-    width: 473px;
-    height: 83px;
-    left: 181px;
-    top: 680px;
-} 
+.nameForm input{
+    width: 100%;
+    border: 3px solid #979797;
+    border-radius: 24px;
+}
 
-h1 {
+.nameForm label {
+    width: 104px;
+    height: 24px;
+    left: 159px;
+    top: 398px;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 20px;
+    line-height: 24px;
+}   
+
+.title {
+    width: 401px;
+    height: 43px;
+    /* left: 217px;
+    top: 234px; */
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 590;
+    font-size: 28px;
+    line-height: 43px;
+    /* identical to box height */
     text-align: center;
-    margin-bottom: 1em;
-    font-size: 24px;
-    color: rgb(34, 34, 34);
-    font-weight: 800;
+}
+
+.email input{
+    border: 3px solid #979797;
+    border-radius: 24px;
+}
+
+.email label {
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-size: 20px;
+}   
+
+.checkbox {
+    top: 20px;
+    left: 20px;
+}
+.checkbox label {
+    width: 359px;
+    height: 25px;
+    left: 257px;
+    top: 682px;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+}
+
+.button-enter{
+    color:aliceblue;
+    font-size: 25px;
+    background: #4B71EB;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 10px;
+    position: absolute;
+    width: 200px;
+    height: 73px;
+    left: 317px;
+    top: 658px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.condition{
+    position: absolute;
+    width: 571px;
+    height: 19px;
+    left: 131px;
+    top: 915px;
+
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
 }

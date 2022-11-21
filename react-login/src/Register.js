@@ -25,6 +25,12 @@ export default function (props) {
     window.location.href = '/signup';
   };
 
+  const gotoPet = (e) => {
+    e.preventDefault();
+    window.location.href = '/pet';
+    console.log('gotoPet');
+  };
+
   const inputHendle = (e) => {
     setstate({
       ...state,
@@ -104,15 +110,15 @@ export default function (props) {
   return (
     <div className="Auth-form-container">
       {/* <img src={logo} /> */}
-      <form className="Auth-form">
+      <form className="Auth-form" onSubmit={gotoPet}>
         <div className="Auth-form-content">
           <h3 className="Auth-form-title">Who is playing?</h3>
-          <div className="text-center">
+          {/* <div className="text-center">
             Not registered yet?{' '}
             <span className="link-primary" onClick={changeAuthMode}>
               Sign Up
             </span>
-          </div>
+          </div> */}
           <div className="form-group mt-3">
             <label>Nickname</label>
             <input
@@ -122,7 +128,7 @@ export default function (props) {
             />
           </div>
           <div className="form-group mt-3">
-            <label>Birthday</label>
+            <label>Birthday </label>
             <select id="month" name="month">
               <option>month</option>
               <option value="01">January</option>
@@ -288,9 +294,7 @@ export default function (props) {
 
           <div className="d-grid gap-2 mt-3">
             {/* <button type="submit" className="btn btn-primary" onClick={Pet}> */}
-            <button className="btn btn-primary" onClick={Pet}>
-              Next
-            </button>
+            <button className="btn-next">Next</button>
           </div>
           {/* <p className="text-center mt-2">
               Forgot <a href="#">password?</a>

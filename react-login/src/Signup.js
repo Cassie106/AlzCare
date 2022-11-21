@@ -7,46 +7,52 @@ function Signup() {
   };
 
   return (
-    <div className="Signup">
-      <h1>Create your caregiver account</h1>
-      <div className="Signup-form-container">
-        <form className="Signup-form">
-          <div className="form-group mt-3">
-            <label>First Name</label>
+    <div className="signup">
+      <div className="signUpEmail">
+        <h1 className="title">Enter your name and email</h1>
+        <div className="nameForm">
+          <div className="FirstName">
+            <label> First Name</label>
+            <br></br>
             <input
               type="FristName"
               className="form-control mt-1"
               placeholder="Enter First Name"
             />
+          </div>
+          <div className="LastName">
             <label>Last Name</label>
+            <br></br>
             <input
               type="LastName"
               className="form-control mt-1"
               placeholder="Enter Last Name"
             />
           </div>
-          <div className="form-group mt-3">
-            <label>Email address</label>
-            <input
-              type="email"
-              className="form-control mt-1"
-              placeholder="Enter email"
-            />
-          </div>
-          {/* <div className="form-group mt-3">
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control mt-1"
-              placeholder="Enter password"
-            />
-          </div> */}
-        </form>
-        <button className="button-signup" onClick={changeAuthMode}>
-          {' '}
-          Enter{' '}
-        </button>
+        </div>
+        <br></br>
+        <div className="email">
+          <label>Email</label>
+          <input
+            type="email"
+            className="form-control mt-1"
+            placeholder="Enter email"
+          />
+        </div>
+        <div className="checkbox">
+          <input type="checkbox" id="checkBox" />
+          <label for="checkBox">Email me tips to get the most of O-FUN</label>
+        </div>
       </div>
+
+      <div className="condition">
+        By continuing, you agree to our Terms and conditions and Privacy Policy
+      </div>
+
+      <button className="button-enter" onClick={changeAuthMode}>
+        {' '}
+        Enter{' '}
+      </button>
     </div>
   );
 }

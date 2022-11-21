@@ -10,6 +10,8 @@ import Role from './role';
 import PhoneSignUp from './phoneSignUp';
 import Verify from './Verify';
 import Pet from './pet';
+import Activities from './Activities';
+import Category from './category';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/phoneSignUp" element={<PhoneSignUp />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/pet" element={<Pet />} />
+        <Route path="/Activities" element={<Activities />} />
+        <Route path="/Category" element={<Category />} />
       </Routes>
     </BrowserRouter>
   );
