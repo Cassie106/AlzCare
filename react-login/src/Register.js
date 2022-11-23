@@ -4,11 +4,6 @@ import 'react-responsive-datepicker/dist/index.css';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Pet from './pet';
-
-// import { DateSelect } from 'react-ymd-date-select/presets/ymd';
-// import { ChakraProvider } from '@chakra-ui/react';
-// import { DateSelect } from 'react-ymd-date-select/presets/chakra-ui';
 
 export default function (props) {
   let [authMode, setAuthMode] = useState('signin');

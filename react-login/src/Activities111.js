@@ -32,10 +32,9 @@ const Activities = () => {
   };
 
   if (SesMode === 'Rec') {
-    return (
+    session = (
       <div>
         <div className="recSession">
-          <h2>Activities</h2>
           <div className="cards">
             <div className="Art">
               <p> Art</p>
@@ -47,10 +46,7 @@ const Activities = () => {
                 cover={<img alt="example" src={drawing} />}
                 onClick={() => gotoDrawing()}
               >
-                <Meta
-                  title="MasterPiece"
-                  description="This is a drawing game."
-                />
+                <Meta title="Trace It" description="This is a drawing game." />
               </Card>
             </div>
 
@@ -96,7 +92,42 @@ const Activities = () => {
         </div>
       </div>
     );
-  }
-};
+  } else {
+    session = (
+      <div className="mySession">
+        <div className="title">
+          <h2>No sessions yet </h2>
+          <h3>Create a new session to add activities</h3>
+        </div>
 
-export default Activities;
+        <button className="button-next-session" onClick={gotoSession}>
+          {' '}
+          New Sessions{' '}
+        </button>
+      </div>
+    );
+  }
+
+  console.log(session);
+
+  return (
+    <div>
+      <div>
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={['Rec']}
+          // onClick={changeSesMode}
+        >
+          <Menu.Item key="Rec" onClick={changeSesMode} icon={<MailOutlined />}>
+            Recommended
+          </Menu.Item>
+
+          <Menu.Item key="Ses" onClick={changeSesMode} icon={<MailOutlined />}>
+            My Session
+          </Menu.Item>
+        </Menu>
+      </div>
+      {{ session }}
+    </div>
+  );
+};
