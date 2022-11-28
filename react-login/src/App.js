@@ -10,9 +10,11 @@ import Role from './role';
 import PhoneSignUp from './phoneSignUp';
 import Verify from './Verify';
 import Pet from './pet';
-import Activities from './Activities';
-import Category from './category';
+import ActivityList from './ActivityList';
+import Category from './Category';
 import NewSession from './NewSession';
+import CreateSession from './CreateSession';
+import Profile from './Profile';
 import Session from './Session';
 
 import { DndProvider } from 'react-dnd';
@@ -31,10 +33,12 @@ function App() {
         <Route path="/phoneSignUp" element={<PhoneSignUp />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/pet" element={<Pet />} />
-        <Route path="/Activities" element={<Activities />} />
+        <Route path="/ActivityList" element={<ActivityList />} />
         <Route path="/Category" element={<Category />} />
         <Route path="/newSession" element={<NewSession />} />
-        <Route path="/session" element={<Session />} />
+        <Route path="/CreateSession" element={<CreateSession />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Session" element={<Session />} />
       </Routes>
     </BrowserRouter>
   );

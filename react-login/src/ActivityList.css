@@ -1,0 +1,109 @@
+h2 {
+    text-decoration: underline;
+}
+
+.button-next-session{
+    color:aliceblue;
+    font-size: 25px;
+    background: #4B71EB;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    position: absolute;
+    width: 200px;
+    height: 73px;
+    left: 317px;
+    top: 780px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.Tabs {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+.dottedBorder {
+    display: flex;
+    border-style: dotted;
+    border-radius: 30px;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    background: #dddfe5;
+    justify-content: left;
+    align-items: center;
+    width: 720px;
+    height: 100px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 50px;
+    position: relative;
+}
+
+.dottedBorderButton{
+    position: absolute;
+    left: 520px;
+}
+
+.sessionOne{
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 20px 2px rgba(187, 187, 187, 0.25);
+    border-radius: 20px;
+    display: flex;
+    font-size: 25px;
+    justify-content: left;
+    align-items: center;
+    height: 100px;
+    left: 50px;
+    position: relative;
+    width: 720px;
+    height: 380px;
+    padding: 50px;
+    border: 1px ridge rgb(0, 0, 0);
+}
+
+.sessionTitle{
+    position: absolute;
+    font-weight: 590;
+    font-size: 30px;
+    top: 10px;
+    color: #4B71EB;
+}
+
+.subTitle {
+    position: absolute;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    left: 50px;
+    text-align: center;
+}
+
+.playBtn {
+    position: absolute;
+    top: 320px;
+    left: 610px;
+}
+
+.sessionTwo{
+    top: 60px;
+    background: #FFFFFF;
+    box-shadow: 2px 8px 20px 2px rgba(187, 187, 187, 0.25);
+    border-radius: 20px;
+    display: flex;
+    font-size: 25px;
+    justify-content: left;
+    align-items: center;
+    height: 100px;
+    left: 50px;
+    position: relative;
+    width: 720px;
+    height: 380px;
+    padding: 50px;
+    border: 1px ridge rgb(0, 0, 0);
+}

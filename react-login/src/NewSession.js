@@ -1,9 +1,10 @@
 import React from 'react';
 import './NewSession.css';
+import { Col, Row } from 'antd';
 
 function NewSession() {
-  const session = () => {
-    window.location.href = '/session';
+  const gotoCreateSession = () => {
+    window.location.href = '/CreateSession';
   };
   return (
     <div className="createSession">
@@ -14,6 +15,7 @@ function NewSession() {
       </div>
       <div className="interest">
         <label>Category</label>
+        <br></br>
         <div class="btn-group" role="group" aria-label="Basic example">
           <button type="button" class="btn btn-outline-primary">
             Music
@@ -24,10 +26,6 @@ function NewSession() {
           <button type="button" class="btn btn-outline-primary">
             Math
           </button>
-        </div>
-        <br></br>
-
-        <div class="btn-group" role="group" aria-label="Basic example">
           <button type="button" class="btn btn-outline-primary">
             Sports
           </button>
@@ -40,7 +38,7 @@ function NewSession() {
         </div>
       </div>
 
-      <button className="button-next" onClick={session}>
+      <button className="button-next" onClick={gotoCreateSession}>
         {' '}
         Confirm{' '}
       </button>

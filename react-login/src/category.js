@@ -1,8 +1,8 @@
-import './category.css';
+import './Category.css';
 
 function Category() {
   const activities = () => {
-    window.location.href = '/activities';
+    window.location.href = '/ActivityList';
   };
   return (
     <div className="Category">
@@ -20,10 +20,7 @@ function Category() {
           <button type="button" class="btn btn-outline-primary">
             Math
           </button>
-        </div>
-        <br></br>
 
-        <div class="btn-group" role="group" aria-label="Basic example">
           <button type="button" class="btn btn-outline-primary">
             Sports
           </button>
@@ -33,9 +30,7 @@ function Category() {
           <button type="button" class="btn btn-outline-primary">
             Cook
           </button>
-        </div>
-        <br></br>
-        <div class="btn-group" role="group" aria-label="Basic example">
+
           <button type="button" class="btn btn-outline-primary">
             Read
           </button>
