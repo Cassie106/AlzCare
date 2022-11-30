@@ -182,18 +182,18 @@ h2 {
 
 .radarChart {
     position: relative;
-    top: 500px;
+    top: 520px;
     width: 100%;
 }
 
 .playTime {
     position: relative;
-    top: 150px;
+    top: 550px;
     width: 100%;
 }
 
 .playTimeList {
     position: relative;
-    top: 200px;
+    top: 570px;
     width: 100%;
 }
