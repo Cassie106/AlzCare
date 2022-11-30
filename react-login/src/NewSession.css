@@ -1,7 +1,13 @@
 .createSession__container {
     flex-direction: row;
-    padding: 50px;
+    padding: 20px;
     position: relative;
-    top: 390px; 
-    left: 200px
+    top: 10px; 
+}
+
+.type_choice{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    top: 10px;
 }

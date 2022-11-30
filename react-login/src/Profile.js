@@ -1,11 +1,12 @@
 import './Profile.css';
+import { PageHeader } from 'antd';
 
 function Profile() {
   const interest = () => {
     window.location.href = './category';
   };
   return (
-    <div className="Pet">
+    <div className="Profile">
       <div className="title">
         <p>Choose a pet to accompany Christina through out the game? </p>
       </div>

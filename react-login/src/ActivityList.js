@@ -13,7 +13,7 @@ import painting from './Painting.png';
 import chalk from './Chalk.png';
 import artists from './Artists.png';
 import colorPad from './ColorMatch.png';
-import board from './ArtBoard.png';
+import artBoard from './ArtBoard.png';
 import square from './square.png';
 
 import math from './math.png';
@@ -22,6 +22,10 @@ import drum from './drum.png';
 import cd from './CDPlayer.png';
 import badminton from './Badminton.png';
 import football from './Football.png';
+import boyNgirl from './boyNgirl.png';
+import radarChart from './radarChart.png';
+import playTime from './playTime.png';
+import playTimeList from './playTimeList.png';
 
 import { Card } from 'antd';
 import { PageHeader } from 'antd';
@@ -33,6 +37,7 @@ import session from './SessionLogo.png';
 import activity from './ActivityLogo.png';
 import { Layout } from 'antd';
 import { Button, Tooltip, Space } from 'antd';
+import setting from './Settings.png';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -77,8 +82,8 @@ const ActivityList = () => {
       'https://cassie106.github.io/GIXMirror/activity/artsocial/';
   };
 
-  const gotoSession = () => {
-    window.location.href = './Session';
+  const gotoNewSession = () => {
+    window.location.href = './newSession';
   };
 
   const gotoActivity = () => {
@@ -196,7 +201,7 @@ const ActivityList = () => {
                 <div style={style_Art}>
                   <Card
                     hoverable
-                    cover={<img alt="example" src={board} />}
+                    cover={<img alt="example" src={artBoard} />}
                     onClick={() => gotoDrawing()}
                   >
                     <Meta
@@ -314,7 +319,7 @@ const ActivityList = () => {
                 <div style={style_Math}>
                   <Card
                     hoverable
-                    cover={<img alt="example" src={board} />}
+                    cover={<img alt="example" src={artBoard} />}
                     onClick={() => gotoDrawing()}
                   >
                     <Meta
@@ -429,7 +434,7 @@ const ActivityList = () => {
                 <div style={style_Music}>
                   <Card
                     hoverable
-                    cover={<img alt="example" src={board} />}
+                    cover={<img alt="example" src={artBoard} />}
                     onClick={() => gotoDrawing()}
                   >
                     <Meta
@@ -539,7 +544,7 @@ const ActivityList = () => {
                 <div style={style_Sport}>
                   <Card
                     hoverable
-                    cover={<img alt="example" src={board} />}
+                    cover={<img alt="example" src={artBoard} />}
                     onClick={() => gotoDrawing()}
                   >
                     <Meta
@@ -581,14 +586,14 @@ const ActivityList = () => {
               <div className="dottedBorder">
                 {' '}
                 Create a new session by adding activities
-                <div className="dottedBorderButton">
+                <div className="dottedBorderButton" onClick={gotoNewSession}>
                   <Button type="primary">+ New Session</Button>
                 </div>
               </div>
 
               {/* ~~~~~~~~~~~ Session One ~~~~~~~~~~~~ */}
               <h3 className="subTitle">Suggestions from experts</h3>
-              <div className="sessionOne">
+              <div className="sessionOne" onClick={gotoDrawing}>
                 {/* My 1st Game */}
                 <p className="sessionTitle">My 1st Game</p>
                 <Row gutter={[16, 24]}>
@@ -597,8 +602,9 @@ const ActivityList = () => {
                       <Card
                         hoverable
                         cover={<img alt="example" src={drawing} />}
+                        onClick={gotoDrawing}
                       >
-                        <Meta title="MasterPiece" description="Art." />
+                        <Meta title="MasterPiece" description="Art" />
                       </Card>
                     </div>
                   </Col>
@@ -615,14 +621,14 @@ const ActivityList = () => {
                         hoverable
                         cover={<img alt="example" src={colorPad} />}
                       >
-                        <Meta title="Color Matching" description="Art." />
+                        <Meta title="Color Matching" description="Art" />
                       </Card>
                     </div>
                   </Col>
                   <Col className="gutter-row" span={6}>
                     <div style={style_Music}>
                       <Card hoverable cover={<img alt="example" src={drum} />}>
-                        <Meta title="Beat It" description="Music." />
+                        <Meta title="Beat It" description="Music" />
                       </Card>
                     </div>
                   </Col>
@@ -633,47 +639,85 @@ const ActivityList = () => {
               </div>
 
               {/* ~~~~~~~~~ session 2 ~~~~~~~~~ */}
-              <div className="sessionTwo">
+              <div className="sessionTwo" onClick={gotoArtSoc}>
                 <p className="sessionTitle">Beginner Friendly</p>
-                <Row gutter={[3, 18]}>
-                  <Col className="gutter-row" span={4}>
+                <Row gutter={[16, 24]}>
+                  <Col className="gutter-row" span={6}>
                     <div style={style_Math}>
                       <Card hoverable cover={<img alt="example" src={math} />}>
-                        <Meta title="NumberMatch" description="Math." />
+                        <Meta title="Numbers" description="Math" />
                       </Card>
                     </div>
                   </Col>
-                  <Col className="gutter-row" span={4}>
+                  <Col className="gutter-row" span={6}>
                     <div style={style_Music}>
                       <Card hoverable cover={<img alt="example" src={drum} />}>
-                        <Meta title="Beat It" description="Music." />
+                        <Meta title="BeatIt" description="Music" />
                       </Card>
                     </div>
                   </Col>
-                  <Col className="gutter-row" span={4}>
-                    <div style={style_Music}>
-                      <Card hoverable cover={<img alt="example" src={cd} />}>
-                        <Meta title="Color Matching" description="Music." />
-                      </Card>
-                    </div>
-                  </Col>
-                  <Col className="gutter-row" span={4}>
-                    <div style={style_Sport}>
-                      <Card
-                        hoverable
-                        cover={<img alt="example" src={football} />}
-                      >
-                        <Meta title="FootballPlayer" description="Sport." />
-                      </Card>
-                    </div>
-                  </Col>
-                  <Col className="gutter-row" span={4}>
+                  <Col className="gutter-row" span={6}>
                     <div style={style_Sport}>
                       <Card
                         hoverable
                         cover={<img alt="example" src={badminton} />}
                       >
-                        <Meta title="Badminton" description="Sport." />
+                        <Meta title="Badminton" description="Sport" />
+                      </Card>
+                    </div>
+                  </Col>
+                  <Col className="gutter-row" span={6}>
+                    <div style={style_Sport}>
+                      <Card
+                        hoverable
+                        cover={<img alt="example" src={football} />}
+                      >
+                        <Meta title="Football" description="Sport" />
+                      </Card>
+                    </div>
+                  </Col>
+                </Row>
+                <div className="playBtn">
+                  <Button type="primary"> Play </Button>
+                </div>
+              </div>
+              {/* ~~~~~~~~~~~~~~~~~~ session 3 ~~~~~~~~~~~~~~~~~*/}
+
+              <div className="sessionThree" onClick={gotoColorM}>
+                {/* My 1st Game */}
+                <p className="sessionTitle">Art, Music, and Fun</p>
+                <Row gutter={[16, 24]}>
+                  <Col className="gutter-row" span={6}>
+                    <div style={style_Art}>
+                      <Card
+                        hoverable
+                        cover={<img alt="example" src={artBoard} />}
+                      >
+                        <Meta title="ArtBoard" description="Art" />
+                      </Card>
+                    </div>
+                  </Col>
+                  <Col className="gutter-row" span={6}>
+                    <div style={style_Music}>
+                      <Card hoverable cover={<img alt="example" src={cd} />}>
+                        <Meta title="CD Player" description="Music" />
+                      </Card>
+                    </div>
+                  </Col>
+                  <Col className="gutter-row" span={6}>
+                    <div style={style_Art}>
+                      <Card
+                        hoverable
+                        cover={<img alt="example" src={colorPad} />}
+                      >
+                        <Meta title="Color Matching" description="Art" />
+                      </Card>
+                    </div>
+                  </Col>
+                  <Col className="gutter-row" span={6}>
+                    <div style={style_Music}>
+                      <Card hoverable cover={<img alt="example" src={drum} />}>
+                        <Meta title="Beat It" description="Music" />
                       </Card>
                     </div>
                   </Col>
@@ -684,7 +728,29 @@ const ActivityList = () => {
               </div>
             </Content>
           </Tabs.TabPane>
-          <Tabs.TabPane tab="Profile" key="3"></Tabs.TabPane>
+          <Tabs.TabPane tab="Profile" key="3">
+            <PageHeader
+              style={{
+                border: '1px solid rgb(235, 237, 240)',
+              }}
+              title="Create Session"
+              subTitle="Customizing your own session from the catagory below."
+            />
+            <div className="profile_header">
+              <img className="boyNgirl" src={boyNgirl}></img>
+              <h3 className="profile_headerText">Hi Jerry!</h3>
+              <h4 className="profile_subtitle">
+                Your alrdady played with CAFE for a while.
+              </h4>
+              <img className="setting" src={setting}></img>
+            </div>
+            <div className="history">
+              <img className="radarChart" src={radarChart}></img>
+              <br></br>
+              <img className="playTime" src={playTime}></img>
+              <img className="playTimeList" src={playTimeList}></img>
+            </div>
+          </Tabs.TabPane>
         </Tabs>
       </div>
     );

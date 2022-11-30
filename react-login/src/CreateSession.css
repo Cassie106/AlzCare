@@ -1,3 +1,15 @@
 .p {
     border-style: dotted;
 }
+
+.row { 
+    /* boxGroup */
+    display: flex;
+}
+.sessionList{   
+    border-style: ridge;
+    width: 300px;
+    height: 200px;
+}
+/* .box */
+
