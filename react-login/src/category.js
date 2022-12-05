@@ -1,8 +1,8 @@
 import './Category.css';
 
 function Category() {
-  const activities = () => {
-    window.location.href = '/ActivityList';
+  const setup = () => {
+    window.location.href = '/Setup';
   };
   return (
     <div className="Category">
@@ -43,7 +43,7 @@ function Category() {
         </div>
       </div>
 
-      <button className="button-next" onClick={activities}>
+      <button className="button-next" onClick={setup}>
         {' '}
         Next{' '}
       </button>

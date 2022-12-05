@@ -16,6 +16,7 @@ import NewSession from './NewSession';
 import CreateSession from './CreateSession';
 import Profile from './Profile';
 import Session from './Session';
+import Setup from './Setup';
 
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -39,6 +40,7 @@ function App() {
         <Route path="/CreateSession" element={<CreateSession />} />
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Session" element={<Session />} />
+        <Route path="/Setup" element={<Setup />} />
       </Routes>
     </BrowserRouter>
   );

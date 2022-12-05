@@ -41,12 +41,12 @@ export default function (props) {
           {' '}
           Enter{' '}
         </button>
-        <div className="text-bot">
+        {/* <div className="text-bot">
           Already have account?
           <span className="link-primary" onClick={changeAuthMode}>
             Sign In
           </span>
-        </div>
+        </div> */}
       </div>
     );
   }

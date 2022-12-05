@@ -1,0 +1,59 @@
+.title-wel {
+    position: absolute;
+    width: 605px;
+    height: 159px;
+    left: 101px;
+    top: 189px;
+
+    font-family: 'Racing Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 81px;
+    text-align: center;
+
+    color: #000000;
+}
+.img-girlnboy {
+    position: absolute;
+    width: 393px;
+    height: 456px;
+    left: 275px;
+    top: 320px; 
+}
+
+
+.button-n{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 45px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 273px;
+    height: 73px;
+    left: 281px;
+    top: 820px;
+    
+    background: #4B71EB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px; */
+
+    color:aliceblue;
+    font-size: 25px;
+    background: #4B71EB;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    position: absolute;
+    width: 200px;
+    height: 73px;
+    left: 317px;
+    top: 830px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}

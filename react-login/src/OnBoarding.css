@@ -6,7 +6,7 @@
 }
 
 .startButton {
-    background-color: rgb(10, 76, 161);
+    background-color: #4B71EB;
     font-size: 36px;
     color:rgb(255, 255, 255);
     border-radius: 32px;
@@ -27,21 +27,19 @@ h1{
 }
 
 .img-1{
-    width: 613px;
-    height: 76px;
-    left: 200px;
-    top: 234px;
+    position: absolute;
+    width: 513.2px;
+    height: 226px;
+    left: 276px;
+    top: 120px;
     
-    font-family: 'Bungee';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 150px;
 }
 
 .img-2{
     position: absolute;
-    width: 400px;
+    width: 496.71px;
     height: 421px;
-    left: 189px;
-    top: 200px;
+    left: 82px;
+    top: 330px;
+    
 }

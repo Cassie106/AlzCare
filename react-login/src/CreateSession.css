@@ -1,15 +1,39 @@
-.p {
-    border-style: dotted;
+.h4-subTitle{
+    position: relative;
+    top:30px;
+    left: 20px;
+    font-size: 22px;
+    font-family: 'SF Pro';
+    font-style: normal;
+    line-height: 36px;
 }
-
-.row { 
-    /* boxGroup */
-    display: flex;
-}
-.sessionList{   
+.sessionList{  
+    position: relative; 
+    top: 60px;
+    left: 76px;
     border-style: ridge;
-    width: 300px;
-    height: 200px;
+    width: 170px;
+    height: 180px;
 }
-/* .box */
 
+.activityList {
+    position: absolute; 
+    top: 360px;
+}
+
+.button-confirm {
+    position: fixed;
+    font-family: 'SF Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 43px;
+    color:aliceblue;
+    width: 200px;
+    height: 73px;
+    left: 317px;
+    top: 962px;
+    background: #4B71EB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}

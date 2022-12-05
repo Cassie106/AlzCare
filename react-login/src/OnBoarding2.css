@@ -5,33 +5,35 @@
     margin-top: 9em;
 }
 
-.title{
+.title-welcome{
     position: absolute;
     width: 219px;
     height: 60px;
     left: 466px;
     top: 369px;
+    
     font-family: 'Racing Sans One';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 650;
     font-size: 48px;
     line-height: 60px;
-
+    
     color: #364663;
-
+    
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
-.img2{
+.img-boy{
     position: absolute;
-    width: 800px;
+    width: 417px;
     height: 456px;
     left: 149px;
     top: 222px;
 }
 
 .button1 {
-    background-color: rgb(10, 76, 161);
+    /* background-color: rgb(10, 76, 161);
     font-size: 36px;
     color:rgb(255, 255, 255);
     border-radius: 32px;
@@ -39,11 +41,29 @@
     width: 473px;
     height: 83px;
     left: 181px;
-    top: 720px;
+    top: 720px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 473px;
+    height: 73px;
+    left: 180px;
+    top: 843px;
+
+    background-color: #4B71EB;
+    font-size: 36px;
+    color:rgb(255, 255, 255);
+    border-radius: 32px;
 }
 
 .button2 {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255);
     font-size: 36px;
     color: rgb(10, 76, 161);
     border-radius: 32px;
@@ -52,5 +72,27 @@
     width: 473px;
     height: 83px;
     left: 181px;
-    top: 850px;
+    top: 850px; */
+
+    /* box-sizing: border-box; */
+
+/* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 473px;
+    height: 73px;
+    left: 180px;
+    top: 955px;
+
+    border: 3px solid #4B71EB;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+
 }

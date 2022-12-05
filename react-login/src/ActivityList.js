@@ -5,6 +5,7 @@ import {
   MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
+  ConsoleSqlOutlined,
 } from '@ant-design/icons';
 import { useState } from 'react';
 
@@ -13,6 +14,7 @@ import painting from './Painting.png';
 import chalk from './Chalk.png';
 import artists from './Artists.png';
 import colorPad from './ColorMatch.png';
+import pic from './Picture.png';
 import artBoard from './ArtBoard.png';
 import square from './square.png';
 
@@ -61,11 +63,7 @@ const style_Sport = {
 const { Meta } = Card;
 
 const ActivityList = () => {
-  const [SesMode, setSesMode] = useState('Rec');
-
-  const changeSesMode = () => {
-    setSesMode(SesMode === 'Rec' ? 'Rec' : 'Ses');
-  };
+  const [tabKey, setTabKey] = useState(1);
 
   const gotoDrawing = () => {
     window.location.href =
@@ -79,26 +77,29 @@ const ActivityList = () => {
 
   const gotoArtSoc = () => {
     window.location.href =
-      'https://cassie106.github.io/GIXMirror/activity/artsocial/';
+      'https://cassie106.github.io/GIXMirror/activity/colormatching/';
   };
 
   const gotoNewSession = () => {
     window.location.href = './newSession';
   };
 
-  const gotoActivity = () => {
-    window.location.href = './activityList';
-  };
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log('urlParams', urlParams);
+  console.log(window.location.search);
 
-  const gotoProfile = () => {
-    window.location.href = './profile';
-  };
+  const curKey = urlParams.get('tab') || tabKey;
+  console.log('curKey', curKey);
 
-  if (SesMode === 'Rec') {
+  // if () {
+
+  // }
+
+  if (true) {
     return (
       <div className="recSession">
         {/* ************* Tab1 ************** */}
-        <Tabs defaultActiveKey="1">
+        <Tabs defaultActiveKey={curKey}>
           <Tabs.TabPane tab="Activity" key="1">
             <PageHeader
               style={{
@@ -186,12 +187,12 @@ const ActivityList = () => {
                 <div style={style_Art}>
                   <Card
                     hoverable
-                    cover={<img alt="example" src={drawing} />}
+                    cover={<img alt="example" src={pic} />}
                     onClick={() => gotoDrawing()}
                   >
                     <Meta
-                      title="MasterPiece"
-                      description="This is a drawing game."
+                      title="Traveling Artist"
+                      description="This is a traveling game."
                     />
                   </Card>
                 </div>
@@ -219,7 +220,7 @@ const ActivityList = () => {
                     onClick={() => gotoDrawing()}
                   >
                     <Meta
-                      title="MasterPiece"
+                      title="SquarePalace"
                       description="This is a drawing game."
                     />
                   </Card>

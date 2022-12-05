@@ -1,5 +1,5 @@
 import imgLogo from './1.png';
-import OFun from './OFUN-2.png';
+import Cafe from './CAFE.png';
 import './OnBoarding.css';
 
 function OnBoarding() {
@@ -8,7 +8,7 @@ function OnBoarding() {
   };
   return (
     <div className="OnBoarding">
-      <img src={OFun} className="img-1" />
+      <img src={Cafe} className="img-1" />
       <img src={imgLogo} className="img-2" alt="ElderlyCare" />
       <div>
         <button className="startButton" onClick={nextPage}>

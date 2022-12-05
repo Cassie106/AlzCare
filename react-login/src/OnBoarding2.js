@@ -3,20 +3,20 @@ import './OnBoarding2.css';
 import React, { Component } from 'react';
 
 function OnBoarding2() {
+  const signIn = () => {
+    window.location.href = '/PhoneSignUp';
+  };
   const signUp = () => {
     window.location.href = '/Role';
-  };
-  const signIn = () => {
-    window.location.href = '/Register';
   };
 
   return (
     <div className="OnBoarding2">
-      <div className="title">
+      <div className="title-welcome">
         <p>Welcome!</p>
       </div>
 
-      <img src={img2} className="img-2" alt="2" />
+      <img src={img2} className="img-boy" alt="2" />
       <button className="button1" onClick={signIn}>
         {' '}
         Log In{' '}
